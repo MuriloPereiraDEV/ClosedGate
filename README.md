@@ -22,7 +22,8 @@ pip install -r requirements.txt
 
 3. Configure o banco de dados PostgreSQL:
 - Crie um banco de dados chamado `oauth_db`
-- Atualize a URL de conexão no arquivo `.env` (se necessário)
+- Copie o arquivo `.env.example` para `.env`
+- Atualize as variáveis no arquivo `.env` conforme necessário
 
 4. Execute as migrações do banco de dados (quando implementadas):
 ```bash
@@ -53,16 +54,17 @@ A API é documentada usando Swagger UI e ReDoc:
 
 ## Variáveis de Ambiente
 
-Crie um arquivo `.env` na raiz do projeto com as seguintes variáveis:
+O arquivo `.env.example` contém todas as variáveis necessárias. Copie-o para `.env` e configure:
 
-```env
-DATABASE_URL=postgresql://postgres:postgres@localhost:5432/oauth_db
-SECRET_KEY=your-secret-key-here
-ALGORITHM=HS256
-ACCESS_TOKEN_EXPIRE_MINUTES=30
-REFRESH_TOKEN_EXPIRE_DAYS=7
-ALLOWED_ORIGINS=http://localhost:3000,http://localhost:8000
+```bash
+cp .env.example .env
 ```
+
+As variáveis incluem:
+- Configurações do banco de dados
+- Chaves de segurança
+- Configurações de CORS
+- Configurações do ambiente
 
 ## Contribuindo
 
@@ -70,4 +72,4 @@ Contribuições são bem-vindas! Sinta-se à vontade para abrir issues ou enviar
 
 ## Autor
 
-[Seu Nome] - [Seu GitHub](https://github.com/seu-usuario) 
+Murilo da Silva Pereira - [GitHub](https://github.com/murilopereira) 
