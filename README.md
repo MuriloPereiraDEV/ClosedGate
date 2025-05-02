@@ -11,8 +11,8 @@ Este projeto está licenciado sob a [MIT License](LICENSE) - veja o arquivo [LIC
 1. Crie um ambiente virtual:
 ```bash
 python -m venv venv
-source venv/bin/activate  # Linux/Mac
-.\venv\Scripts\activate   # Windows
+source venv/bin/activate      # Linux/Mac
+.\venv\Scripts\Activate.ps1   # Windows
 ```
 
 2. Instale as dependências:
@@ -72,4 +72,4 @@ Contribuições são bem-vindas! Sinta-se à vontade para abrir issues ou enviar
 
 ## Autor
 
-Murilo da Silva Pereira - [GitHub](https://github.com/murilopereira) 
+Murilo da Silva Pereira - [GitHub](https://github.com/MuriloPereiraDEV) 
