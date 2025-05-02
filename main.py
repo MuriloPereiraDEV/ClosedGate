@@ -5,7 +5,7 @@ from src.core.config import settings
 from src.api.auth import router as auth_router
 from src.core.middleware import (
     RateLimitMiddleware,
-    SecurityHeadersMiddleware,
+    SecurityHeadersMiddleware
 )
 
 app = FastAPI(
@@ -36,8 +36,8 @@ app = FastAPI(
     """,
     version="1.0.0",
     contact={
-        "name": "Suporte",
-        "email": "suporte@exemplo.com",
+        "name": "Murilo da Silva Pereira",
+        "email": "murilogalego10@gmail.com",
     },
     license_info={
         "name": "MIT",
