@@ -2,7 +2,7 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
 from src.core.config import settings
-from src.api.auth import router as auth_router
+from src.api.v1.endpoints.auth import router as auth_router
 from src.core.middleware import (
     RateLimitMiddleware,
     SecurityHeadersMiddleware
